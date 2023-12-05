@@ -22,3 +22,7 @@ while True:
     if int(guess) == secret:
         print(f"The secret is {secret}")
         break
+    elif int(guess) < secret:
+        min_value = int(guess)
+    elif int(guess) > secret:
+        max_value = int(guess)
